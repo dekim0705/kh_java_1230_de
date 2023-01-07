@@ -10,6 +10,7 @@ import java.util.Scanner;
 // 총 세트 메뉴의 금액 구하는 문제
 public class SetMenu {
     public static void main(String[] args) {
+        System.out.println("안녕하세요 넘 어려워용");
         Scanner sc = new Scanner(System.in);
         System.out.print("햄버거 3가지, 음료 2가지의 가격을 입력하세요: ");
         int[] menu = new int[5];
