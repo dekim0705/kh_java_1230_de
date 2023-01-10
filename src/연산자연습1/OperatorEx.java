@@ -73,7 +73,7 @@ public class OperatorEx  {
 
        /* 증감연산자
         int num1 = 10;
-        System.out.println(num1--);
+        System.out.println(num1--); // --가 뒤에 붙으면 다음 num1부터 적용. --가 앞에 붙으면 그 num1부터 적용
         System.out.println(num1);
         */
 

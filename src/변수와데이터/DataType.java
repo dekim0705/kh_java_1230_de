@@ -10,6 +10,7 @@ public class DataType  {//복합명사일때는 두번째도 대문자(camel 표
 
         System.out.println(hour + "시 " + minute + "분");
         NameCard nameCard = new NameCard();
+        // Step 2. create a variable named "nameCard" with the class "NameCard". Then assign a new orient(?)
         nameCard.name = "안녕하세요";
         nameCard.age = 123;
         nameCard.address = "서울시";
@@ -19,7 +20,7 @@ public class DataType  {//복합명사일때는 두번째도 대문자(camel 표
     }
 }
 // 사용자 정의 자료
-class NameCard{
+class NameCard{ // Step 1. create a class named "NameCard".
     String name;
     int age;
     String address;

@@ -14,6 +14,5 @@ public class OpPriority    {
         System.out.println(rst2);
         System.out.println(rst3);
 
-
     }
 }

@@ -43,12 +43,21 @@ public class SystemInOut {
 
 
 
-        Scanner sc = new Scanner(System.in);
-        System.out.print("정수 입력 : ");
-        int n = sc.nextInt();
-        for(int i = 1; i <= n * n; i++) {
-            System.out.printf("%4d", i);
-            if (i % n == 0) System.out.println();
+        Scanner sc = new Scanner(System.in); // 스캐너 생성
+        System.out.print("정수 입력 : "); // 정수 입력 문구 출력
+        int n = sc.nextInt(); // 변수 n에 정수넣어줌
+        for(int i = 1; i <= n * n; i++) { // i가 1이고, i가 정수*정수가 될때까지 돌린다(정사각형의미아니고 정사각형모양의 숫자까지), 한개씩 더해가면서
+            System.out.printf("%4d", i); // 칸맞추기해주려고 4칸 띄워주고 그 자리에 i를 넣기. 여기까지만 하면 한줄로나옴
+          if (i % n == 0) System.out.println(); // 줄바꾼거. i를 정수로 나눴을 때 0이남으면 거기부터 줄 바꾸라는 뜻
         }
     }
 }
+
+/* 내가한거
+        System.out.print("정수를 입력하세요: ");
+        int n = sc.nextInt();
+        for(int i = 1; i <= n * n; i++) {
+        System.out.printf("%4d",i);
+        if(i % n == 0) System.out.printf("\n");
+        }
+ */
