@@ -29,7 +29,10 @@ public class SignBoard {
     }
 }
 
-
+// sum += numberSize[signNumber.charAt(i) - '0'] + 1;
+// 배열에 있는 숫자들 차례대로 문자화해서 하나씩 -'0'을 해줌. 그럼 원래 입력한 값이 나오고 +1을 해줘야 뒤쪽 여백 한칸의 수가 더해짐.
+// last commit try for real
+// why is commit so difficult?
 // char chNum = Integer.toString(num).charAt(0); 정수 -> 스트링 -> 문자
 
 
