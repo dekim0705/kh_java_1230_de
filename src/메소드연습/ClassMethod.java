@@ -16,6 +16,11 @@ public class ClassMethod {
         System.out.println(rst);
         // System.out.println(sample.say());  // println에서 찍어주려면 반환값이 있어야 함 그래서 안됨
         sample.say(); // 결과 찍은 시점이 메소드
+        // say() 메소드를 호출하기 위해서는 클래스를 객체로 만들고 객체의 메소드로 접근
         System.out.println(sample.sayStr());
+
+        int rst2 = sample.sum(1,2,3,4,5);// 오버로딩 문법 sum이라는 method가 두개 있다는 뜻
+        System.out.println(rst2);
+
     }
 }
