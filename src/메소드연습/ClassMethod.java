@@ -13,6 +13,7 @@ public class ClassMethod {
         int n1 = sc.nextInt();
         int n2 = sc.nextInt();
         int rst = sample.sum(n1, n2) ; // sum()은 매개변수와 반환값이 있는 메소드. 두개의 값을 받아서 한개의 결과값을 줘ㄸ ㅏ
+        int rst1 = sample.sum(100,200);
         System.out.println(rst);
         // System.out.println(sample.say());  // println에서 찍어주려면 반환값이 있어야 함 그래서 안됨
         sample.say(); // 결과 찍은 시점이 메소드
