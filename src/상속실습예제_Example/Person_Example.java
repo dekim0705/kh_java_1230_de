@@ -46,22 +46,45 @@ class Student extends Person_Example {
         String[] studyStr = {"", "\"열심히\"", "\"적당히\"", "\"놀면서\""}; // 쌍따옴표쓰려면 \" 해줘야 함
         return studyStr[study];
     }
-
     public void setStudy(int study) {
         this.study = study;
     }
-
-//    class Student1 extends Worker {
-//        int study1;
-//
-//        public String getStudy1() {
-//            String[] studyStr = {"", "\"대충\"", "\"적당히\"", "\"놀면서\""}; // 쌍따옴표쓰려면 \" 해줘야 함
-//            return studyStr[study1];
-//        }
-//
-//        public void setStudy1(int study1) {
-//            this.study1 = study1;
-//
-//        }
-//    }
 }
+
+    class Student1 extends Student {
+        int study1;
+
+        public String getStudy() {
+            String[] studyStr = {"", "\"대충\"", "\"조금만\"", "\"아주쪼끔\""}; // 쌍따옴표쓰려면 \" 해줘야 함
+            return studyStr[study];
+        }
+
+        public void setStudy(int study) {
+            this.study = study;
+        }
+
+        public int getStudy1() {
+            return study1;
+        }
+
+        public void setStudy1(int study1) {
+            this.study1 = study1;
+        }
+    }
+
+
+
+    class Student2 extends Student {
+
+        int study1;
+
+
+        public int getStudy1() {
+            return study1;
+        }
+
+        public void setStudy1(int study1) {
+            this.study1 = study1;
+        }
+
+    }

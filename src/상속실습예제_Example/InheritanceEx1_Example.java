@@ -22,22 +22,34 @@ public class InheritanceEx1_Example {
         Student student = new Student();
         student.setAge(10);
         student.setSleep(12);
-        student.setStudy(3);
+        student.setStudy(1);
         System.out.println("학생은 " + student.age + "살 입니다");
         System.out.println("학생은 " + student.sleep + "시간 동안 잠을자용");
         System.out.println("학생이 " + student.getStudy() + " 공부를 합니다.");
 
+        System.out.println("-----------------------------"); // getStudy() 오버라이드
+        Student1 student1 = new Student1();
+        student1.setAge(11);
+        student1.setSleep(12);
+        student1.setStudy(3);
+        student1.setStudy1(1);
+
+        System.out.println("학생1은 " + student1.getAge() + "살 입니다");
+        System.out.println("학생1은 " + student1.getSleep() + "시간 동안 잠을자용.");
+        System.out.println("학생1이 " + student1.getStudy() + " 공부를 합니다.");
+        System.out.println("학생1이 " + student1.getStudy1() + "시간 동안 공부를 합니다.");
+
         System.out.println("-----------------------------");
-//        Student1 student1 = new Student1();
-//        student1.setAge(11);
-//        student1.setSleep(12);
-//        student1.setWork(1);
-//        student1.setStudy1(1);
-//
-//        System.out.println("학생1은 " + student1.age + "살 입니다");
-//        System.out.println("학생1은 " + student1.sleep + "시간 동안 잠을자용.");
-//        System.out.println("학생1이 " + student1.work + "시간 동안 공부를 합니다.");
-//        System.out.println("학생1이 " + student1.getStudy1() + "시간 동안 공부를 합니다.");
+        Student2 student2 = new Student2(); // student2는 부모클래스를 Student로 데려와서 getStudy()부분이 Student꺼가 나옴
+        student2.setAge(11);
+        student2.setSleep(12);
+        student2.setStudy(3);
+        student2.setStudy1(5);
+
+        System.out.println("학생1은 " + student2.getAge() + "살 입니다");
+        System.out.println("학생1은 " + student2.getSleep() + "시간 동안 잠을자용.");
+        System.out.println("학생1이 " + student2.getStudy() + " 공부를 합니다.");
+        System.out.println("학생1이 " + student2.getStudy1() + "시간 동안 공부를 합니다.");
 
 
 // ****************stdudent.getAge()로 가져와야 클래스를 또 상속받은 객체의 값이 나오나??
