@@ -1,0 +1,36 @@
+package _0126_05_00_열거타입;
+import java.util.Calendar;
+
+// 열거타입(enum) : 한정된 값인 열거 상수 중에서 하나의 상수를 저장하는 타입
+// 열거체를 비교 할 때 실제 값 뿐만 아니라 타입체크도 가능
+public class EnumType {
+    public static void main(String[] args) {
+        Week today = null; // Week enum 타입의 참조 변수 선언. (상수라서 바로 사용 가능)
+        Calendar cal = Calendar.getInstance(); // 캘린더는 추상클래스라서 객체 생성 없이 사용 가능
+        int week = cal.get(Calendar.DAY_OF_WEEK); // 해당 주의 몇번째 요일인지 반환(일요일 부터 시작하고 1). (캘린더 전부 클래스변수라서 직접 접근해야 함)
+        switch (week) {
+            case 1:
+                today = Week.SUNDAY;
+                break;
+            case 2:
+                today = Week.MONDAY;
+                break;
+            case 3:
+                today = Week.TUESDAY;
+                break;
+            case 4:
+                today = Week.WEDNESDAY;
+                break;
+            case 5:
+                today = Week.THURSDAY;
+                break;
+            case 6:
+                today = Week.FRIDAY;
+                break;
+            case 7:
+                today = Week.SATURDAY;
+                break;
+        }
+        System.out.println("오늘의 요일은 : " + today);
+    }
+}
