@@ -21,15 +21,16 @@ public class Pythagoras {
            int y = (arrNum[1] * arrNum[1]) + (arrNum[2] * arrNum[2]);  // b c
            int z = (arrNum[2] * arrNum[2]) + (arrNum[0] * arrNum[0]);  // c a
 
-//         if(x == (arrNum[2]*arrNum[2]) || y == (arrNum[0]*arrNum[0])) {
-//           System.out.print("right");
-//       } else if(z == (arrNum[1]*arrNum[1]) {
-//          System.out.print("right");
-//       } else {
-//       System.out.print("wrong");
-//       }
 
            if(num == 0) break;
+         if(x == (arrNum[2]*arrNum[2]) || y == (arrNum[0]*arrNum[0])) {
+           System.out.println("right");
+       } else if(z == (arrNum[1]*arrNum[1])) {
+          System.out.println("right");
+       } else System.out.println("wrong");
+
+
+
 
 
            }

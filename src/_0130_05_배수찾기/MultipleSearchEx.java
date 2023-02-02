@@ -24,6 +24,9 @@ import java.util.Scanner;
 // 어레이리스트, 반복문 종료조건(0), 배열개수 정해지지 X, 0이들어올 때 까지 계속 돌려야 함
 public class MultipleSearchEx {
     public static void main(String[] args) {
+        /*
+         강사님 풀이
+         */
         List<Integer> list = new ArrayList<>(); // ArrayList 생성하기
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt(); // 주어진 수
@@ -46,7 +49,7 @@ public class MultipleSearchEx {
 
 
 
-/*
+/* 문제이해 X, 학원에서 끄적
   Scanner sc = new Scanner(System.in);
         int givenNum = sc.nextInt();
         List<Integer> arrNum = new ArrayList<>();
@@ -62,3 +65,26 @@ public class MultipleSearchEx {
                 else System.out.println(arrNum.get(i) + " is NOT a multiple of " + givenNum);
             }
  */
+
+/*  처음에 생각했던대로 값을 랜덤으로 받아보기. random value 개수는 정해줘야 하지만, 0이 들어오는 것 또한 랜덤
+        List<Integer> list = new ArrayList<>(); // ArrayList 생성하기
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt(); // 주어진 수
+        int val;
+        while (true) {
+            val = (int) (Math.random() * 10);
+           if(!(list.contains(val)))
+               list.add(val);
+            if(val == 0) break;
+
+        } // while 문에 if 를 연속으로 넣을수도 있고, else if 도 가능하고, do-while 도 할 수도 있고,
+            for (Integer f : list) System.out.print(f + " ");
+            System.out.println();
+            for (Integer e : list) {
+                if (e % n == 0) {
+                    System.out.println(e + " is a multiple of " + n + ".");
+                } else System.out.println(e + " is NOT a multiple of " + n + ".");
+            }
+ */
+
+
