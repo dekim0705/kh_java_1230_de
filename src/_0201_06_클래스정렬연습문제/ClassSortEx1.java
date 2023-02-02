@@ -29,18 +29,22 @@ public class ClassSortEx1 {
         System.out.print("학생 수 입력 : ");
         int num = sc.nextInt();
         int cnt = 0;
+        int preScore = 0;
         for (int i = 0; i < num; i++) { // 입력 받은 학생 수 만큼 순회(하면서 입력받기)
             ts.add(new StudentInfo(sc.next(), sc.nextInt(), sc.nextLine()));
         }
-        System.out.println("===== 학생 성적 출력 ====");
-        System.out.println("-----------------------");
+        System.out.println("======== 학생 성적 출력 ========");
+        System.out.println("------------------------------");
         System.out.println("석차   성적    이름    학번");
-        System.out.println("-----------------------");
+        System.out.println("------------------------------");
         for (StudentInfo e : ts) {
-            System.out.printf("%2d%6d%5s%5s\n", ++cnt, e.grade, e.name, e.sNum);
+            if(preScore != e.grade) cnt++; // ( 이전 점수와 지금 점수가 같지 않으면 cnt 증가 )
+            System.out.printf("%2d%6d  %5s  %7s\n", cnt, e.grade, e.name, e.sNum);
             //System.out.println(" " + (++cnt) + "    " + e.grade + "    " + e.name + "    " + e.sNum);
+            preScore = e.grade; // 현재 점수를 preScore 변수에 저장
+
         }
-        System.out.println("------------------------");
+        System.out.println("------------------------------");
         System.out.println();
 
     }
